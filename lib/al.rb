@@ -1,1 +1,4 @@
-Dir[File.dirname(__FILE__) + "/al/**/*.rb"].sort.each { |f| require File.expand_path(f) }
+require 'al/version'
+require 'al/dsl'
+require 'al/engine'
+require 'al/template_handler'

@@ -1,4 +1,3 @@
-require 'al/dsl'
 module Al
   class Engine
     include Al::DSL

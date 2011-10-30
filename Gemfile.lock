@@ -36,6 +36,8 @@ GEM
     activesupport (3.1.1)
       multi_json (~> 1.0)
     arel (2.2.1)
+    assert_json (0.1.1)
+      activesupport
     builder (3.0.0)
     capybara (1.1.1)
       mime-types (>= 1.16)
@@ -112,6 +114,7 @@ PLATFORMS
 
 DEPENDENCIES
   al!
+  assert_json
   capybara (>= 0.4.0)
   rails (~> 3.0)
   sqlite3

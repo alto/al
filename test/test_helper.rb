@@ -1,6 +1,6 @@
 require 'rubygems'
 require 'test/unit'
-# require 'active_support'
+# require 'ruby-debug'
 
 # $:.push File.expand_path("../../lib", __FILE__)
 
@@ -22,3 +22,4 @@ ActiveRecord::Migrator.migrate File.expand_path("../dummy/db/migrate/", __FILE__
 Dir["#{File.dirname(__FILE__)}/test_helpers/**/*.rb"].each { |f| require f }
 
 require File.dirname(__FILE__) + '/../lib/al.rb'
+require 'assert_json'

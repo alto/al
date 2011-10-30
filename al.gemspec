@@ -22,4 +22,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rails', '~> 3.0'
   s.add_development_dependency "capybara", ">= 0.4.0"
   s.add_development_dependency "sqlite3"
+  s.add_development_dependency "assert_json"
+  # s.add_development_dependency "ruby-debug19"
 end

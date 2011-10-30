@@ -1,10 +1,16 @@
 require 'test_helper'
 
-class PlacesTest < ActiveSupport::IntegrationCase
+class PlacesTest < ActionController::IntegrationTest
+  include AssertJson
+  
   test "success" do
-    visit place_path(:name => 'Mate', :format => 'json')
-    assert_match /application\/json/, page.response_headers['Content-Type']
+    get "/places/Mate"
+    assert_match /application\/json/, @response.content_type
 
-    puts page.body
+    assert_json @response.body do
+      has 'place' do
+        has 'name', 'Mate'
+      end
+    end
   end
 end
