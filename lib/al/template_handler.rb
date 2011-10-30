@@ -5,7 +5,7 @@ module ActionView
       self.default_format = Mime::JSON
 
       def self.call(template)
-        %{ ::Al::Engine.new(#{template.source.inspect}).render(self, assigns.merge(local_assigns)) }
+        %{ ::Al::Engine.new(#{template.source.inspect}).render(self) }
       end
     end
   end

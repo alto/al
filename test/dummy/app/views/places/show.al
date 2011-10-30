@@ -1,3 +1,3 @@
 object(@place) do
-  attributes :name
+  attributes :name, :city
 end

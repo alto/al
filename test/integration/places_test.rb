@@ -10,6 +10,7 @@ class PlacesTest < ActionController::IntegrationTest
     assert_json @response.body do
       has 'place' do
         has 'name', 'Mate'
+        has 'city', 'Hamburg'
       end
     end
   end
