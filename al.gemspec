@@ -18,5 +18,8 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   # s.add_dependency 'activesupport'
-  # s.add_development_dependency 'minitest'
+  s.add_dependency 'multi_json'
+  s.add_development_dependency 'rails', '~> 3.0'
+  s.add_development_dependency "capybara", ">= 0.4.0"
+  s.add_development_dependency "sqlite3"
 end
